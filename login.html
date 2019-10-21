@@ -1,0 +1,66 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Katharina Reiter"> 
+    <meta name="Description" content="Hier finden Sie unsere secPatt-Patterns." /> 
+    <link href="stylesheets/screen.css" rel="stylesheet" media="screen, projection">
+  
+    <title>Messaging System</title>
+  </head>
+  <body>
+  
+  <header>
+     <a id="logo" tabindex="-1" href="./">Messages<span>Coursera</span></a>
+  </header>
+
+  <nav>
+  	<ul>
+		<li><a href="index.html" >Home</a></li>
+   		<li><a aria-current="page" >Login</a></li>
+		<li><a href="register.html" >Register</a></li>
+  	</ul>
+  </nav>
+
+ <main id="main">
+ 
+ <!-- Login -->
+<div id="id01">  
+  <form action="login_action.php" method="POST">
+    <div class="container">
+        <h1>Login</h1>
+    <p>Please fill in your username and password to log in.</p>
+    <hr>
+    
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      <hr>
+      <button type="submit">Login</button>
+    </div>
+  </form>
+</div>
+
+<!-- Password Reset -->
+<button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Forgot Password?</button>
+
+<div id="id02" class="modal">
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="container">
+      <label for="email"><b>E-Mail</b></label>
+      <input type="text" placeholder="Enter E-Mail" name="email" required>
+
+      <button type="submit">Reset Password</button>
+    </div>
+
+    <div class="container" >
+      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+
+</main>
+</body>
+</html>
